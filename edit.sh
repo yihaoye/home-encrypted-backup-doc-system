@@ -1,7 +1,9 @@
-rm -rf ./*
-cp ../backup/* .
+cd $HEBDS_DIR_PATH
 
-openssl aes-256-cbc -d -in encrypted.aes -out encrypted.tar.gz
-rm -r encrypted.aes
-tar -zxvf encrypted.tar.gz
-rm -r encrypted.tar.gz
+rm -rf ./*
+cp "${HEBDS_BACKUP_PATH}/*" .
+
+openssl aes-256-cbc -d -in encrypted_dir.aes -out encrypted_dir.tar.gz
+rm -r encrypted_dir.aes
+tar -zxvf encrypted_dir.tar.gz
+rm -r encrypted_dir.tar.gz
