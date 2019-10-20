@@ -6,7 +6,8 @@ cd $HEBDS_DIR_PATH
 cp -rf "${HEBDS_BACKUP_PATH}/encrypt_dir.aes" ./encrypt_dir.aes
 cp -rf "${HEBDS_BACKUP_PATH}/.git" ./.git
 
-if [ ! -d "encrypt_dir.aes" ]; then
+if [ ! -e encrypt_dir.aes ]
+then
     mkdir encrypt_dir
 else
     openssl aes-256-cbc -d -in encrypt_dir.aes -out encrypt_dir.tar.gz
