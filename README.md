@@ -10,15 +10,15 @@ To implement this system, please follow the following steps:
   
 ## Work Flows
 ### Start edit your folder/directory:
-1. click Edit_Start.command, get editable folder
+1. click Edit_Start, get editable folder
 2. edit your folder
-3. click Edit_Stop.command
+3. click Edit_Stop
 ### View only with your folder/directory:
-1. click Read_Start.command, get decrypted folder
+1. click Read_Start, get decrypted folder
 2. view your folder
-3. click Read_Stop.command
+3. click Read_Stop
 ### Download/Sync backup from cloud to local:
-1. click Pull_Sync.command
+1. click Pull_Sync
   
 ## About
 *$HEBDS_DIR_PATH: current repository's path, i.e. your edit path for sensitive files*  

@@ -8,7 +8,7 @@ rm -rf ./encrypt_dir
 openssl aes-256-cbc -in encrypt_dir.tar.gz -out encrypt_dir.aes
 rm -r encrypt_dir.tar.gz
 
-mv Read_Stop.command .Read_Stop.command
-mv .Edit_Start.command Edit_Start.command
-mv .Read_Start.command Read_Start.command
-mv .Pull_Sync.command Pull_Sync.command
+mv Read_Stop .Read_Stop
+mv .Edit_Start Edit_Start
+mv .Read_Start Read_Start
+mv .Pull_Sync Pull_Sync

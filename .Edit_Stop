@@ -18,8 +18,8 @@ then
     cp -rf encrypt_dir.aes "${HEBDS_BACKUP_PATH}/encrypt_dir.aes"
     cp -rf .git "${HEBDS_BACKUP_PATH}/.git"
 
-    mv Edit_Stop.command .Edit_Stop.command
-    mv .Edit_Start.command Edit_Start.command
-    mv .Read_Start.command Read_Start.command
-    mv .Pull_Sync.command Pull_Sync.command
+    mv Edit_Stop .Edit_Stop
+    mv .Edit_Start Edit_Start
+    mv .Read_Start Read_Start
+    mv .Pull_Sync Pull_Sync
 fi
